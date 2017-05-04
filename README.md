@@ -47,12 +47,12 @@ ml = MLDeploy('env-url', auth=('username', 'password'), register=SomeMLPlugin)
 ### Full API Overview
 
 ```python
-from mldeploy import MlDeploy, RevoML, AzureML
+from mldeploy import MLDeploy, RevoML, AzureML
 from sklearn import datasets
 import numpy as np
 
 # --- Or Plugin AzureML's operationalization implementation ---
-ml = MlDeploy('url', auth=('username', 'password'))
+ml = MLDeploy('url', auth=('username', 'password'))
 ml.register(RevoML)
 
 
