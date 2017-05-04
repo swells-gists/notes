@@ -44,7 +44,6 @@ ml = MLDeploy('env-url', auth=('username', 'password'), register=SomeMLPlugin)
 
 > **Note**  I am not advocating the `revoml` name or a separate python package outside of `mldeploy` I am just using it as a distinction between `azureml` to better articulate the example.
 
-### Full API Overview
 
 ```python
 from mldeploy import MLDeploy, RevoML, AzureML
