@@ -51,7 +51,7 @@ from mldeploy import MLDeploy, RevoML, AzureML
 from sklearn import datasets
 import numpy as np
 
-# --- Or Plugin AzureML's operationalization implementation ---
+# --- Or Plugin RevoML's operationalization implementation ---
 ml = MLDeploy('url', auth=('username', 'password'))
 ml.register(RevoML)
 
