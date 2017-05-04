@@ -4,7 +4,7 @@
 
 July 2017, we will be working to introduce a Client Library for model operationalization written in Python. Focus will be given to produce a light-weight progressive set of APIs that are crafted for flexibility, readability, and a low learning curve.
 
-At its core, `mldeploy` contains an extensive and powerful **plugin** system that allows you to very easily break your "operationalization application" up into isolated pieces of business logic, and reusable utilities. These `plugins` are responsible for their respective implementation concerns regarding: authentication, deploying, re-deploying, and service for consumption. 
+At its core, `mldeploy` contains an extensive and powerful **plugin** system that allows you to very easily break your "operationalization application" up into isolated pieces of business logic, and reusable utilities. These `plugins` are responsible for their respective implementation concerns: authentication, deploying, re-deploying, and service for consumption. 
 
 ## Authentication 
 
