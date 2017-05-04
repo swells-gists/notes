@@ -18,7 +18,8 @@ from mldeploy import MLDeploy
 ml = MLDeploy('env-url', auth=('username', 'password'))
 ml = MLDeploy('env-url', auth=('authuri', 'tenant', 'resource', 'clientid')
 
-# It does not matter, perhaps some other authentication strategy (Basic Auth)from requests.auth import HTTPBasicAuth
+# It does not matter, perhaps some other authentication strategy (Basic Auth)
+from requests.auth import HTTPBasicAuth
 ml = MLDeploy('env-url', auth=HTTPBasicAuth('user', 'pass'))
 ```
 
