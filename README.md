@@ -78,8 +78,8 @@ def add_one(x):
 ml.service('add-one')
    .version('1.0.1')
    .code_fn(add_one, init)
-   .inputs({ 'x', 'float' }),
-   .outputs({ 'answer', 'float' }),
+   .inputs({ 'x': 'float' }),
+   .outputs({ 'answer': 'float' }),
    .objects([ local_obj ])
    .packages([ 'pandas==0.18.0', 'sklearn', np ])
    .description('The Description of the `add-one` service, accepts _markdown_.')
@@ -90,8 +90,8 @@ kwargs = {
     'version': '1.0.1', 
     'code_fn': [ add_one, init ]    
     'objects': [ local_obj ], 
-    'inputs': { 'x', 'float' },
-    'outputs': { 'answer', 'float' },
+    'inputs': { 'x': 'float' },
+    'outputs': { 'answer': 'float' },
     'packages': [ 'pandas==0.18.0', 'sklearn', np ],
     'description': 'The Description of the `add-one` service, accepts _markdown_.' 
 }
