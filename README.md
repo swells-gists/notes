@@ -1,4 +1,4 @@
-# `mldeploy` The Operationalization Client Library 
+# The Operationalization Client Library `mldeploy` 
 
 ## Introduction
 
