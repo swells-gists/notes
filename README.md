@@ -195,4 +195,67 @@ class Operationalization(object):
 
 ```
 
+## Example (mlserver)
+
+
+```python
+# -*- coding: utf-8; tab-width: 4; indent-tabs-mode: t; python-indent: 4 -*-
+
+"""
+
+Overview
+========
+
+MLServer operationalization impl.
+
+"""
+
+import logging
+from ..operationalization import Operationalization
+
+log = logging.getLogger(__name__)
+
+class MLServer(Operationalization):
+        
+    def initializer(self, api_client, config):
+        """
+        Override
+        """
+        log.debug('MLServer.initializer(): \n %s', config.host)
+        self._api_client = api_client        
+
+    def destructor(self):
+        """
+        Override
+        """
+        log.debug('MLServer.destructor()')        
+        
+    def authentication(self, context):
+        """
+        Override
+        """
+        log.debug('MLServer.authentication()')
+           
+    def get_service(self, name):
+        log.debug('MLServer.get_service(): \n   %s', name)
+        return name + "-MLServer"
+
+    def list_services(self, name=None, version=None):
+        log.debug('MLServer.list_services(): \n   %s\n   %s', name, version)
+        pass
+        
+    def delete_service(self, name, **kwargs):
+        log.debug('MLServer.deploy_service(): \n   %s\n   %s', name, kwargs)
+        pass
+
+    def deploy_service(self, name, **kwargs):
+        log.debug('MLServer.deploy_service(): \n   %s\n   %s', name, kwargs)
+        pass
+
+    def redeploy_service(self, name, **kwargs):
+        log.debug('MLServer.redeploy_service(): \n   %s\n   %s', name, kwargs)        
+        pass
+
+
+```
 
